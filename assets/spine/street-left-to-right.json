@@ -1,0 +1,56 @@
+{
+"skeleton": { "hash": "yde04axRcyw", "spine": "4.1.24", "width": 1024, "height": 576, "images": "", "audio": "" },
+"bones": [
+	{ "name": "root" },
+	{ "name": "spawn", "parent": "root", "length": 68.22, "rotation": -1.45, "x": 309.45, "y": 2.68 },
+	{ "name": "target", "parent": "root", "length": 72.51, "x": 722.95, "y": 575.03 }
+],
+"slots": [
+	{ "name": "game/street-left-to-right", "bone": "root", "attachment": "game/street-left-to-right" },
+	{ "name": "bbox-collision-left", "bone": "root", "attachment": "bbox-collision-left" },
+	{ "name": "bbox-collision-right", "bone": "root", "attachment": "bbox-collision-right" },
+	{ "name": "bbox-dust-left", "bone": "root", "attachment": "bbox-dust-left" },
+	{ "name": "bbox-dust-right", "bone": "root", "attachment": "bbox-dust-right" }
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"bbox-collision-left": {
+				"bbox-collision-left": {
+					"type": "boundingbox",
+					"vertexCount": 8,
+					"vertices": [ -0.47, 0.09, -1.33, 575.03, 534.76, 575.89, 526.99, 493.88, 493.32, 405.83, 382.83, 378.2, 242.11, 282.38, 109.17, 0.95 ]
+				}
+			},
+			"bbox-collision-right": {
+				"bbox-collision-right": {
+					"type": "boundingbox",
+					"vertexCount": 7,
+					"vertices": [ 457.07, -3.36, 647.85, 139.08, 810.14, 298.78, 878.34, 443.81, 918.05, 580.21, 1025.96, 580.21, 1025.1, 0.95 ]
+				}
+			},
+			"bbox-dust-left": {
+				"bbox-dust-left": {
+					"type": "boundingbox",
+					"vertexCount": 10,
+					"vertices": [ 146.29, 3.54, 268.01, 259.94, 388.87, 346.26, 550.3, 392.88, 575.33, 575.03, 535.62, 575.03, 500.23, 407.55, 381.96, 375.61, 244.7, 283.24, 106.58, 0.95 ]
+				}
+			},
+			"bbox-dust-right": {
+				"bbox-dust-right": {
+					"type": "boundingbox",
+					"vertexCount": 12,
+					"vertices": [ 428.58, -1.64, 476.92, 79.51, 550.3, 144.26, 665.11, 201.23, 763.53, 290.15, 836.04, 422.23, 885.25, 580.21, 920.64, 580.21, 867.98, 423.09, 811.87, 297.06, 622.19, 118.02, 457.07, -1.64 ]
+				}
+			},
+			"game/street-left-to-right": {
+				"game/street-left-to-right": { "x": 512, "y": 288, "width": 1024, "height": 576 }
+			}
+		}
+	}
+],
+"animations": {
+	"animation": {}
+}
+}

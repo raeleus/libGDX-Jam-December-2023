@@ -1,0 +1,41 @@
+{
+"skeleton": {
+	"hash": "cCgh+ddgxf4",
+	"spine": "4.1.24",
+	"x": -43.95,
+	"y": -29.7,
+	"width": 87.9,
+	"height": 59.4,
+	"images": "",
+	"audio": ""
+},
+"bones": [
+	{ "name": "root" },
+	{ "name": "bone", "parent": "root", "scaleX": 0.15, "scaleY": 0.15 },
+	{ "name": "dust", "parent": "bone", "length": 144.5, "rotation": -88.84, "x": -257.17, "y": -2.11 }
+],
+"slots": [
+	{ "name": "game/enemy-tank", "bone": "bone", "attachment": "game/enemy-tank" },
+	{ "name": "bbox", "bone": "bone", "attachment": "bbox" }
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"bbox": {
+				"bbox": {
+					"type": "boundingbox",
+					"vertexCount": 4,
+					"vertices": [ -262.9, -165.49, -269.73, 152.23, 288.85, 159.06, 293.97, -162.08 ]
+				}
+			},
+			"game/enemy-tank": {
+				"game/enemy-tank": { "rotation": -90, "width": 396, "height": 586 }
+			}
+		}
+	}
+],
+"animations": {
+	"animation": {}
+}
+}

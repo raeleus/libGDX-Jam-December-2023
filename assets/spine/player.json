@@ -1,0 +1,184 @@
+{
+"skeleton": {
+	"hash": "EY/ygFNixLo",
+	"spine": "4.1.24",
+	"x": -29.25,
+	"y": -13.73,
+	"width": 61.95,
+	"height": 27.45,
+	"images": "",
+	"audio": ""
+},
+"bones": [
+	{ "name": "root" },
+	{ "name": "bone", "parent": "root", "scaleX": 0.15, "scaleY": 0.15 },
+	{ "name": "turret-left", "parent": "bone", "length": 128.89, "rotation": -0.54, "x": 120.13, "y": 61.24 },
+	{ "name": "turret-right", "parent": "bone", "length": 128.89, "rotation": -0.54, "x": 120.13, "y": -57.87 },
+	{ "name": "dust-bone", "parent": "bone", "length": 132.35, "rotation": -90, "x": -182.91, "y": 3.09 },
+	{ "name": "thruster-left-bone", "parent": "bone", "length": 135.65, "rotation": 180, "x": -180.56, "y": 43.88 },
+	{ "name": "thruster-right-bone", "parent": "bone", "length": 139.86, "rotation": 180, "x": -173.2, "y": -52.86 }
+],
+"slots": [
+	{ "name": "game/player-infiltrator", "bone": "bone", "attachment": "game/player-infiltrator2" },
+	{ "name": "turret-left", "bone": "turret-left", "attachment": "game/player-infiltrator-turret2" },
+	{ "name": "turret-right", "bone": "turret-right", "attachment": "game/player-infiltrator-turret2" },
+	{ "name": "game/muzzle-flash", "bone": "bone" },
+	{ "name": "game/muzzle-flash2", "bone": "bone" },
+	{ "name": "game/light-blue", "bone": "bone", "attachment": "light-blue" },
+	{ "name": "game/light-red", "bone": "bone", "attachment": "light-red" },
+	{ "name": "bbox", "bone": "bone", "attachment": "bbox" }
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"bbox": {
+				"bbox": {
+					"type": "boundingbox",
+					"vertexCount": 4,
+					"vertices": [ -203.21, -81.9, -202.4, 77.36, 185.55, 78.99, 188, -82.72 ]
+				}
+			}
+		}
+	},
+	{
+		"name": "infiltrator",
+		"attachments": {
+			"game/muzzle-flash": {
+				"game/muzzle-flash2": { "name": "game/muzzle-flash", "x": 252.38, "y": 53.91, "width": 76, "height": 65 }
+			},
+			"game/muzzle-flash2": {
+				"game/muzzle-flash2": { "name": "game/muzzle-flash", "x": 253.6, "y": -64.59, "width": 76, "height": 65 }
+			},
+			"game/player-infiltrator": {
+				"game/player-infiltrator2": { "name": "game/player-infiltrator", "rotation": -90, "width": 183, "height": 390 }
+			},
+			"turret-left": {
+				"game/player-infiltrator-turret2": { "name": "game/player-infiltrator-turret", "x": 34.86, "y": -2.14, "rotation": -89.46, "width": 55, "height": 126 }
+			},
+			"turret-right": {
+				"game/player-infiltrator-turret2": { "name": "game/player-infiltrator-turret", "x": 34.86, "y": -2.14, "rotation": -89.46, "width": 55, "height": 126 }
+			}
+		}
+	},
+	{
+		"name": "muscle",
+		"attachments": {
+			"game/muzzle-flash2": {
+				"game/muzzle-flash2": { "name": "game/muzzle-flash", "x": 260.3, "y": -98.71, "width": 76, "height": 65 }
+			},
+			"game/player-infiltrator": {
+				"game/player-infiltrator2": { "name": "game/player-muscle", "rotation": -90, "width": 195, "height": 440 }
+			},
+			"turret-right": {
+				"game/player-infiltrator-turret2": { "name": "game/player-muscle-turret", "x": 24.48, "y": -28.43, "rotation": -89.46, "width": 58, "height": 161 }
+			}
+		}
+	},
+	{
+		"name": "pursuit",
+		"attachments": {
+			"game/light-blue": {
+				"light-blue": { "name": "game/light-blue", "x": -12.49, "y": 27.41, "width": 449, "height": 449 }
+			},
+			"game/light-red": {
+				"light-red": { "name": "game/light-red", "x": -19.14, "y": -30.11, "width": 449, "height": 449 }
+			},
+			"game/muzzle-flash": {
+				"game/muzzle-flash2": { "name": "game/muzzle-flash", "x": 268.07, "y": 5.44, "width": 76, "height": 65 }
+			},
+			"game/muzzle-flash2": {
+				"game/muzzle-flash2": { "name": "game/muzzle-flash", "x": 268.76, "y": -30.19, "width": 76, "height": 65 }
+			},
+			"game/player-infiltrator": {
+				"game/player-infiltrator2": { "name": "game/player-pursuit", "rotation": -90, "width": 177, "height": 414 }
+			},
+			"turret-right": {
+				"game/player-infiltrator-turret2": { "name": "game/player-pursuit-turret", "x": 51.28, "y": 52.26, "rotation": -89.46, "width": 76, "height": 124 }
+			}
+		}
+	}
+],
+"animations": {
+	"animation": {
+		"slots": {
+			"game/light-blue": {
+				"attachment": [
+					{ "time": 0.3333 },
+					{ "time": 0.6667, "name": "light-blue" }
+				]
+			},
+			"game/light-red": {
+				"attachment": [
+					{},
+					{ "time": 0.3333, "name": "light-red" },
+					{ "time": 0.6667 }
+				]
+			}
+		}
+	},
+	"fire": {
+		"slots": {
+			"game/muzzle-flash": {
+				"rgba": [
+					{ "color": "ffffffff" },
+					{ "time": 0.0667, "color": "ffffff00" }
+				],
+				"attachment": [
+					{ "name": "game/muzzle-flash2" },
+					{ "time": 0.0667 },
+					{ "time": 0.1333, "name": "game/muzzle-flash2" }
+				]
+			},
+			"game/muzzle-flash2": {
+				"rgba": [
+					{ "time": 0.0667, "color": "ffffffff" },
+					{ "time": 0.1333, "color": "ffffff00" }
+				],
+				"attachment": [
+					{ "time": 0.0667, "name": "game/muzzle-flash2" },
+					{ "time": 0.1333 }
+				]
+			}
+		}
+	},
+	"hide-guns": {
+		"bones": {
+			"turret-left": {
+				"scale": [
+					{},
+					{ "time": 0.1, "x": 0 }
+				]
+			},
+			"turret-right": {
+				"scale": [
+					{},
+					{ "time": 0.1, "x": 0 }
+				]
+			}
+		}
+	},
+	"show-guns": {
+		"bones": {
+			"turret-left": {
+				"scale": [
+					{
+						"x": 0,
+						"curve": [ 0.033, 0, 0.067, 1, 0.033, 1, 0.067, 1 ]
+					},
+					{ "time": 0.1 }
+				]
+			},
+			"turret-right": {
+				"scale": [
+					{
+						"x": 0,
+						"curve": [ 0.033, 0, 0.067, 1, 0.033, 1, 0.067, 1 ]
+					},
+					{ "time": 0.1 }
+				]
+			}
+		}
+	}
+}
+}

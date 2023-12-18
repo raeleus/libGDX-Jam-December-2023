@@ -1,0 +1,61 @@
+{
+"skeleton": {
+	"hash": "Y9LoMEcDv54",
+	"spine": "4.1.24",
+	"x": -34.12,
+	"y": -13.58,
+	"width": 68.25,
+	"height": 27.15,
+	"images": "",
+	"audio": ""
+},
+"bones": [
+	{ "name": "root" },
+	{ "name": "bone", "parent": "root", "scaleX": 0.15, "scaleY": 0.15 }
+],
+"slots": [
+	{ "name": "car", "bone": "bone", "attachment": "car" },
+	{ "name": "bbox", "bone": "bone", "attachment": "bbox" }
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"bbox": {
+				"bbox": {
+					"type": "boundingbox",
+					"vertexCount": 4,
+					"vertices": [ -232.07, -89.78, -235.61, 86.69, 225.78, 87.4, 227.91, -80.57 ]
+				}
+			}
+		}
+	},
+	{
+		"name": "car1",
+		"attachments": {
+			"car": {
+				"car": { "name": "game/civ-car-1", "rotation": -90, "width": 187, "height": 472 }
+			}
+		}
+	},
+	{
+		"name": "car2",
+		"attachments": {
+			"car": {
+				"car": { "name": "game/civ-car-2", "rotation": -90, "width": 182, "height": 443 }
+			}
+		}
+	},
+	{
+		"name": "car3",
+		"attachments": {
+			"car": {
+				"car": { "name": "game/civ-car-3", "rotation": -90, "width": 181, "height": 455 }
+			}
+		}
+	}
+],
+"animations": {
+	"animation": {}
+}
+}

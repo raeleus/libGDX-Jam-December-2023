@@ -1,0 +1,56 @@
+{
+"skeleton": { "hash": "2F7LwGcJlOM", "spine": "4.1.24", "width": 1024, "height": 576, "images": "", "audio": "" },
+"bones": [
+	{ "name": "root" },
+	{ "name": "spawn", "parent": "root", "length": 103.6, "rotation": -0.48, "x": 524.4, "y": 0.95 },
+	{ "name": "target", "parent": "root", "length": 81.15, "rotation": -0.61, "x": 519.22, "y": 575.89 }
+],
+"slots": [
+	{ "name": "game/street-narrow-to-wide", "bone": "root", "attachment": "game/street-narrow-to-wide" },
+	{ "name": "bbox-collision-left", "bone": "root", "attachment": "bbox-collision-left" },
+	{ "name": "bbox-collision-right", "bone": "root", "attachment": "bbox-collision-right" },
+	{ "name": "bbox-dust-left", "bone": "root", "attachment": "bbox-dust-left" },
+	{ "name": "bbox-dust-right", "bone": "root", "attachment": "bbox-dust-right" }
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"bbox-collision-left": {
+				"bbox-collision-left": {
+					"type": "boundingbox",
+					"vertexCount": 10,
+					"vertices": [ 108.31, -2.5, 125.57, 65.7, 171.32, 163.25, 237.8, 243.53, 307.72, 321.23, 329.3, 358.35, 331.03, 473.16, 331.03, 577.62, 0.4, 575.03, 2.12, -1.64 ]
+				}
+			},
+			"bbox-collision-right": {
+				"bbox-collision-right": {
+					"type": "boundingbox",
+					"vertexCount": 7,
+					"vertices": [ 924.1, -0.77, 851.58, 172.75, 774.75, 281.52, 686.7, 366.98, 690.15, 575.89, 1022.51, 575.89, 1024.24, -0.77 ]
+				}
+			},
+			"bbox-dust-left": {
+				"bbox-dust-left": {
+					"type": "boundingbox",
+					"vertexCount": 10,
+					"vertices": [ 168.73, -0.77, 210.17, 108.86, 300.81, 227.99, 377.65, 316.05, 371.6, 575.03, 330.17, 575.03, 325.85, 340.22, 249.02, 256.48, 167.01, 154.62, 109.17, -1.64 ]
+				}
+			},
+			"bbox-dust-right": {
+				"bbox-dust-right": {
+					"type": "boundingbox",
+					"vertexCount": 8,
+					"vertices": [ 855.03, -2.5, 769.57, 190.01, 653.03, 320.36, 650.44, 576.76, 690.15, 575.03, 686.7, 366.98, 837.77, 191.74, 922.37, -0.77 ]
+				}
+			},
+			"game/street-narrow-to-wide": {
+				"game/street-narrow-to-wide": { "x": 512, "y": 288, "scaleY": -1, "width": 1024, "height": 576 }
+			}
+		}
+	}
+],
+"animations": {
+	"animation": {}
+}
+}

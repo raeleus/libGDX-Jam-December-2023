@@ -1,0 +1,56 @@
+{
+"skeleton": { "hash": "LAjCGLxl3IE", "spine": "4.1.24", "width": 1024, "height": 576, "images": "", "audio": "" },
+"bones": [
+	{ "name": "root" },
+	{ "name": "spawn", "parent": "root", "length": 88.07, "rotation": -1.12, "x": 728.13, "y": 1.82 },
+	{ "name": "target", "parent": "root", "length": 82.89, "rotation": -1.19, "x": 290.46, "y": 575.03 }
+],
+"slots": [
+	{ "name": "game/street-right-to-left", "bone": "root", "attachment": "game/street-right-to-left" },
+	{ "name": "bbox-collision-left", "bone": "root", "attachment": "bbox-collision-left" },
+	{ "name": "bbox-collision-right", "bone": "root", "attachment": "bbox-collision-right" },
+	{ "name": "bbox-dust-left", "bone": "root", "attachment": "bbox-dust-left" },
+	{ "name": "bbox-dust-right", "bone": "root", "attachment": "bbox-dust-right" }
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"bbox-collision-left": {
+				"bbox-collision-left": {
+					"type": "boundingbox",
+					"vertexCount": 8,
+					"vertices": [ 533.9, -1.64, 520.09, 57.93, 442.39, 114.91, 253.33, 214.18, 146.29, 384.25, 104.85, 575.89, -3.06, 575.89, 0.4, 0.09 ]
+				}
+			},
+			"bbox-collision-right": {
+				"bbox-collision-right": {
+					"type": "boundingbox",
+					"vertexCount": 10,
+					"vertices": [ 920.64, 0.09, 919.78, 52.75, 875.75, 152.89, 834.32, 227.99, 745.4, 302.24, 498.5, 387.7, 446.71, 537.05, 459.66, 575.03, 1023.37, 575.03, 1025.1, 0.09 ]
+				}
+			},
+			"bbox-dust-left": {
+				"bbox-dust-left": {
+					"type": "boundingbox",
+					"vertexCount": 12,
+					"vertices": [ 568.43, -1.64, 565.84, 34.62, 451.89, 133.9, 242.11, 298.78, 146.29, 481.8, 146.29, 576.76, 106.58, 577.62, 148.88, 379.07, 230.03, 246.99, 375.06, 128.72, 514.91, 57.07, 533.9, 0.09 ]
+				}
+			},
+			"bbox-dust-right": {
+				"bbox-dust-right": {
+					"type": "boundingbox",
+					"vertexCount": 14,
+					"vertices": [ 919.06, -0.67, 883.52, -2.5, 880.93, 54.48, 785.97, 230.58, 691.01, 298.78, 476.06, 375.61, 422.54, 531.87, 428.58, 574.17, 459.66, 574.17, 449.3, 527.55, 499.37, 389.43, 747.13, 299.65, 849.67, 201.52, 920.64, 50.16 ]
+				}
+			},
+			"game/street-right-to-left": {
+				"game/street-right-to-left": { "x": 512, "y": 288, "width": 1024, "height": 576 }
+			}
+		}
+	}
+],
+"animations": {
+	"animation": {}
+}
+}

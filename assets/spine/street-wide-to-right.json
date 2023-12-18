@@ -1,0 +1,56 @@
+{
+"skeleton": { "hash": "b09fp7dhF7Q", "spine": "4.1.24", "width": 1024, "height": 576, "images": "", "audio": "" },
+"bones": [
+	{ "name": "root" },
+	{ "name": "spawn", "parent": "root", "length": 127.76, "x": 526.99, "y": 3.54 },
+	{ "name": "target", "parent": "root", "length": 99.28, "x": 723.82, "y": 572.44 }
+],
+"slots": [
+	{ "name": "game/street-wide-to-right", "bone": "root", "attachment": "game/street-wide-to-right" },
+	{ "name": "bbox-collision-left", "bone": "root", "attachment": "bbox-collision-left" },
+	{ "name": "bbox-dust-left", "bone": "root", "attachment": "bbox-dust-left" },
+	{ "name": "bbox-dust-right", "bone": "root", "attachment": "bbox-dust-right" },
+	{ "name": "bbox-collision-right", "bone": "root", "attachment": "bbox-collision-right" }
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"bbox-collision-left": {
+				"bbox-collision-left": {
+					"type": "boundingbox",
+					"vertexCount": 8,
+					"vertices": [ 109.17, -1.64, 183.41, 158.93, 303.4, 304.83, 407.86, 440.36, 482.1, 538.77, 533.9, 573.3, 1.26, 575.89, -0.47, -0.77 ]
+				}
+			},
+			"bbox-collision-right": {
+				"bbox-collision-right": {
+					"type": "boundingbox",
+					"vertexCount": 4,
+					"vertices": [ 930.14, -0.77, 921.51, 575.89, 1023.37, 575.03, 1024.24, -0.77 ]
+				}
+			},
+			"bbox-dust-left": {
+				"bbox-dust-left": {
+					"type": "boundingbox",
+					"vertexCount": 7,
+					"vertices": [ 166.14, -0.77, 216.21, 114.91, 574.47, 575.89, 529.58, 575.89, 293.05, 290.15, 178.23, 157.21, 109.17, -0.77 ]
+				}
+			},
+			"bbox-dust-right": {
+				"bbox-dust-right": {
+					"type": "boundingbox",
+					"vertexCount": 5,
+					"vertices": [ 855.03, 0.95, 891.29, 82.97, 882.66, 573.3, 921.51, 573.3, 929.28, 0.95 ]
+				}
+			},
+			"game/street-wide-to-right": {
+				"game/street-wide-to-right": { "x": 512, "y": 288, "width": 1024, "height": 576 }
+			}
+		}
+	}
+],
+"animations": {
+	"animation": {}
+}
+}

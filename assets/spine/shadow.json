@@ -1,0 +1,32 @@
+{
+"skeleton": {
+	"hash": "YpWDcwTyibM",
+	"spine": "4.1.24",
+	"x": -42.75,
+	"y": -77.17,
+	"width": 85.5,
+	"height": 88.35,
+	"images": "",
+	"audio": ""
+},
+"bones": [
+	{ "name": "root" },
+	{ "name": "bone", "parent": "root", "scaleX": 0.15, "scaleY": 0.15 }
+],
+"slots": [
+	{ "name": "game/shadow", "bone": "bone", "attachment": "game/shadow" }
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"game/shadow": {
+				"game/shadow": { "y": -220, "width": 570, "height": 589 }
+			}
+		}
+	}
+],
+"animations": {
+	"animation": {}
+}
+}

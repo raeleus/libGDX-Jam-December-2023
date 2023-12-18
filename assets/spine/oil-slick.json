@@ -1,0 +1,51 @@
+{
+"skeleton": {
+	"hash": "Cy3kMD5lv3c",
+	"spine": "4.1.24",
+	"x": -5.71,
+	"y": -5.56,
+	"width": 11.1,
+	"height": 11.1,
+	"images": "",
+	"audio": ""
+},
+"bones": [
+	{ "name": "root" },
+	{ "name": "bone", "parent": "root", "scaleX": 0.15, "scaleY": 0.15 },
+	{ "name": "game/bullet", "parent": "bone", "length": 796.01, "rotation": 180, "x": -1.09, "y": -0.05 }
+],
+"slots": [
+	{ "name": "game/bullet", "bone": "game/bullet", "attachment": "game/particle-explosion-4" },
+	{ "name": "bbox", "bone": "bone", "attachment": "bbox" }
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"bbox": {
+				"bbox": {
+					"type": "boundingbox",
+					"vertexCount": 4,
+					"vertices": [ -150.82, -132.21, -140.42, 195.19, 130.61, 192.87, 106.73, -148.33 ]
+				}
+			},
+			"game/bullet": {
+				"game/bullet": { "x": 389.38, "y": 1.94, "rotation": 180, "width": 788, "height": 13 },
+				"game/particle-explosion-4": { "color": "000000ff", "rotation": 180, "width": 74, "height": 74 }
+			}
+		}
+	}
+],
+"animations": {
+	"animation": {
+		"bones": {
+			"game/bullet": {
+				"scale": [
+					{ "y": 1.019 },
+					{ "time": 0.1333, "x": 7, "y": 7 }
+				]
+			}
+		}
+	}
+}
+}

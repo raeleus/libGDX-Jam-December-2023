@@ -1,0 +1,101 @@
+{
+"com.badlogic.gdx.graphics.g2d.BitmapFont": {
+	"font": {
+		"file": "font.fnt",
+		"scaledSize": -1,
+		"markupEnabled": false,
+		"flip": false
+	}
+},
+"com.badlogic.gdx.graphics.Color": {
+	"black": {
+		"r": 0,
+		"g": 0,
+		"b": 0,
+		"a": 1
+	},
+	"white": {
+		"r": 1,
+		"g": 1,
+		"b": 1,
+		"a": 1
+	}
+},
+"com.ray3k.tenpatch.TenPatchDrawable": {
+	"button-normal-down-10": {
+		"region": "button-normal-down",
+		"horizontalStretchAreas": [ 16, 212 ],
+		"verticalStretchAreas": [ 17, 81 ],
+		"tiling": false,
+		"minWidth": 230,
+		"minHeight": 99,
+		"rightWidth": 11,
+		"leftWidth": 11,
+		"bottomHeight": 10,
+		"topHeight": 12,
+		"offsetX": 0,
+		"offsetY": 0,
+		"offsetXspeed": 0,
+		"offsetYspeed": 0,
+		"frameDuration": 0.03,
+		"regions": [],
+		"playMode": 2,
+		"crushMode": 0
+	},
+	"button-normal-up-10": {
+		"region": "button-normal-up",
+		"horizontalStretchAreas": [ 16, 212 ],
+		"verticalStretchAreas": [ 17, 81 ],
+		"tiling": false,
+		"minWidth": 230,
+		"minHeight": 99,
+		"rightWidth": 11,
+		"leftWidth": 11,
+		"bottomHeight": 10,
+		"topHeight": 12,
+		"offsetX": 0,
+		"offsetY": 0,
+		"offsetXspeed": 0,
+		"offsetYspeed": 0,
+		"frameDuration": 0.03,
+		"regions": [],
+		"playMode": 2,
+		"crushMode": 0
+	}
+},
+"com.badlogic.gdx.scenes.scene2d.ui.ImageButton$ImageButtonStyle": {
+	"left": {
+		"imageUp": "button-left-up",
+		"imageDown": "button-left-down",
+		"pressedOffsetY": -3
+	},
+	"right": {
+		"imageUp": "button-right-up",
+		"imageDown": "button-right-down",
+		"pressedOffsetY": -3
+	},
+	"engage": {
+		"imageUp": "engage",
+		"up": "button-normal-up-10",
+		"down": "button-normal-down-10"
+	}
+},
+"com.badlogic.gdx.scenes.scene2d.ui.Label$LabelStyle": {
+	"default": {
+		"font": "font"
+	}
+},
+"com.badlogic.gdx.scenes.scene2d.ui.TextButton$TextButtonStyle": {
+	"default": {
+		"font": "font",
+		"fontColor": "black",
+		"up": "button-normal-up-10",
+		"down": "button-normal-down-10"
+	}
+},
+"com.badlogic.gdx.scenes.scene2d.ui.TextTooltip$TextTooltipStyle": {
+	"default": {
+		"label": "default"
+	}
+}
+}

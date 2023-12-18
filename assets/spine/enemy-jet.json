@@ -1,0 +1,40 @@
+{
+"skeleton": {
+	"hash": "0nDK9uawvAc",
+	"spine": "4.1.24",
+	"x": -36,
+	"y": -33.08,
+	"width": 72,
+	"height": 66.15,
+	"images": "",
+	"audio": ""
+},
+"bones": [
+	{ "name": "root" },
+	{ "name": "bone", "parent": "root", "scaleX": 0.15, "scaleY": 0.15 }
+],
+"slots": [
+	{ "name": "game/enemy-jet", "bone": "bone", "attachment": "game/enemy-jet" },
+	{ "name": "bbox", "bone": "bone", "attachment": "bbox" }
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"bbox": {
+				"bbox": {
+					"type": "boundingbox",
+					"vertexCount": 4,
+					"vertices": [ -200.69, -83.89, -200.69, 105.32, 230.52, 103.12, 233.46, -89.75 ]
+				}
+			},
+			"game/enemy-jet": {
+				"game/enemy-jet": { "rotation": -90, "width": 441, "height": 480 }
+			}
+		}
+	}
+],
+"animations": {
+	"animation": {}
+}
+}

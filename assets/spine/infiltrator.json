@@ -1,0 +1,200 @@
+{
+"skeleton": {
+	"hash": "p3QhG/eLlfg",
+	"spine": "4.1.24",
+	"x": 246.48,
+	"y": 184.34,
+	"width": 554.36,
+	"height": 252.83,
+	"images": "",
+	"audio": ""
+},
+"bones": [
+	{ "name": "root" },
+	{ "name": "car", "parent": "root", "x": 260.91, "y": 161.88, "scaleX": 0.533, "scaleY": 0.533 },
+	{ "name": "game/car-infiltrator-bottom", "parent": "car", "length": 174.36, "rotation": -0.8, "x": 417.77, "y": 264.64 }
+],
+"slots": [
+	{ "name": "game/car-infiltrator-bottom", "bone": "game/car-infiltrator-bottom", "attachment": "game/car-infiltrator-bottom2" },
+	{ "name": "game/car-infililtrator-tire-back", "bone": "car", "attachment": "game/car-infililtrator-tire-back2" },
+	{ "name": "game/car-infililtrator-tire-front", "bone": "car", "attachment": "game/car-infililtrator-tire-front2" },
+	{ "name": "game/car-infiltrator-top", "bone": "game/car-infiltrator-bottom", "attachment": "game/car-infiltrator-top2" },
+	{ "name": "game/car-infiltrator-bottom2", "bone": "game/car-infiltrator-bottom" }
+],
+"skins": [
+	{
+		"name": "infiltrator",
+		"attachments": {
+			"game/car-infililtrator-tire-back": {
+				"game/car-infililtrator-tire-back2": { "name": "game/car-infililtrator-tire-back", "x": 41.43, "y": 286.55, "width": 137, "height": 197 }
+			},
+			"game/car-infililtrator-tire-front": {
+				"game/car-infililtrator-tire-front2": { "name": "game/car-infililtrator-tire-front", "x": 287.47, "y": 174.14, "width": 183, "height": 264 }
+			},
+			"game/car-infiltrator-bottom": {
+				"game/car-infiltrator-bottom2": { "name": "game/car-infiltrator-bottom", "x": 93.89, "y": 24.68, "rotation": 0.8, "width": 1002, "height": 457 }
+			},
+			"game/car-infiltrator-top": {
+				"game/car-infiltrator-top2": { "name": "game/car-infiltrator-top", "x": 93.89, "y": 24.68, "rotation": 0.8, "width": 1002, "height": 457 }
+			}
+		}
+	},
+	{
+		"name": "muscle",
+		"attachments": {
+			"game/car-infililtrator-tire-back": {
+				"game/car-infililtrator-tire-back2": { "name": "game/car-muscle-tire-back", "x": 12.92, "y": 271.25, "width": 114, "height": 150 }
+			},
+			"game/car-infililtrator-tire-front": {
+				"game/car-infililtrator-tire-front2": { "name": "game/car-muscle-front", "x": 273.76, "y": 109.64, "width": 149, "height": 198 }
+			},
+			"game/car-infiltrator-bottom": {
+				"game/car-infiltrator-bottom2": { "name": "game/car-muscle-bottom", "x": 103.11, "y": -0.24, "rotation": 0.8, "width": 1195, "height": 592 }
+			},
+			"game/car-infiltrator-top": {
+				"game/car-infiltrator-top2": { "name": "game/car-muscle-top", "x": 103.11, "y": -0.24, "rotation": 0.8, "width": 1195, "height": 592 }
+			}
+		}
+	},
+	{
+		"name": "owl",
+		"attachments": {
+			"game/car-infililtrator-tire-back": {
+				"game/car-infililtrator-tire-back2": { "name": "game/car-owl-foot-right", "x": 529.08, "y": 41.9, "width": 79, "height": 57 }
+			},
+			"game/car-infililtrator-tire-front": {
+				"game/car-infililtrator-tire-front2": { "name": "game/car-owl-foot-left", "x": 407.42, "y": 0.94, "width": 80, "height": 51 }
+			},
+			"game/car-infiltrator-top": {
+				"game/car-infiltrator-top2": { "name": "game/car-owl", "x": 0.26, "y": 48.37, "rotation": 0.8, "width": 361, "height": 605 }
+			}
+		}
+	},
+	{
+		"name": "pursuit",
+		"attachments": {
+			"game/car-infililtrator-tire-back": {
+				"game/car-infililtrator-tire-back2": { "name": "game/car-pursuit-tire-back", "x": 58.13, "y": 330.32, "width": 131, "height": 161 }
+			},
+			"game/car-infililtrator-tire-front": {
+				"game/car-infililtrator-tire-front2": { "name": "game/car-pursuit-tire-front", "x": 348.63, "y": 123.52, "width": 193, "height": 238 }
+			},
+			"game/car-infiltrator-bottom": {
+				"game/car-infiltrator-bottom2": { "name": "game/car-pursuit-bottom", "x": 84.89, "y": 49.23, "rotation": 0.8, "width": 1001, "height": 596 }
+			},
+			"game/car-infiltrator-top": {
+				"game/car-infiltrator-top2": { "name": "game/car-pursuit-top", "x": 85.84, "y": 50.17, "rotation": 0.8, "width": 1001, "height": 596 }
+			}
+		}
+	}
+],
+"animations": {
+	"hide-left": {
+		"bones": {
+			"car": {
+				"translate": [
+					{
+						"curve": [ 0.078, 0, 0.197, -861.1, 0.078, 0, 0.197, 0 ]
+					},
+					{ "time": 0.2333, "x": -861.1 }
+				]
+			},
+			"game/car-infiltrator-bottom": {
+				"rotate": [
+					{
+						"curve": [ 0.022, 0, 0.044, -4.84 ]
+					},
+					{
+						"time": 0.0667,
+						"value": -4.84,
+						"curve": [ 0.122, -4.84, 0.178, 0 ]
+					},
+					{ "time": 0.2333 }
+				],
+				"translate": [
+					{}
+				]
+			}
+		}
+	},
+	"hide-right": {
+		"bones": {
+			"car": {
+				"translate": [
+					{
+						"curve": [ 0.078, 0, 0.197, 812.34, 0.078, 0, 0.197, 0 ]
+					},
+					{ "time": 0.2333, "x": 812.34 }
+				]
+			},
+			"game/car-infiltrator-bottom": {
+				"rotate": [
+					{
+						"curve": [ 0.022, 0, 0.044, 4.31 ]
+					},
+					{
+						"time": 0.0667,
+						"value": 4.31,
+						"curve": [ 0.122, 4.31, 0.178, 0 ]
+					},
+					{ "time": 0.2333 }
+				]
+			}
+		}
+	},
+	"show-left": {
+		"bones": {
+			"car": {
+				"translate": [
+					{
+						"x": 809.25,
+						"curve": [ 0.078, 809.25, 0.197, 0, 0.078, 0, 0.197, 0 ]
+					},
+					{ "time": 0.2333 }
+				]
+			},
+			"game/car-infiltrator-bottom": {
+				"rotate": [
+					{
+						"time": 0.2333,
+						"curve": [ 0.256, 0, 0.278, 2.27 ]
+					},
+					{
+						"time": 0.3,
+						"value": 2.27,
+						"curve": [ 0.344, 2.27, 0.389, 0 ]
+					},
+					{ "time": 0.4333 }
+				]
+			}
+		}
+	},
+	"show-right": {
+		"bones": {
+			"car": {
+				"translate": [
+					{
+						"x": -864.76,
+						"curve": [ 0.078, -864.76, 0.197, 0, 0.078, 0, 0.197, 0 ]
+					},
+					{ "time": 0.2333 }
+				]
+			},
+			"game/car-infiltrator-bottom": {
+				"rotate": [
+					{
+						"time": 0.2333,
+						"curve": [ 0.256, 0, 0.278, -2.6 ]
+					},
+					{
+						"time": 0.3,
+						"value": -2.6,
+						"curve": [ 0.344, -2.6, 0.389, 0 ]
+					},
+					{ "time": 0.4333 }
+				]
+			}
+		}
+	}
+}
+}

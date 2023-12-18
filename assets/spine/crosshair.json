@@ -1,0 +1,68 @@
+{
+"skeleton": {
+	"hash": "7dGXZkJ8zBs",
+	"spine": "4.1.24",
+	"x": -8.55,
+	"y": -8.33,
+	"width": 17.1,
+	"height": 16.65,
+	"images": "",
+	"audio": ""
+},
+"bones": [
+	{ "name": "root" },
+	{ "name": "rotator", "parent": "root", "length": 100 },
+	{ "name": "bone", "parent": "rotator", "scaleX": 0.15, "scaleY": 0.15 }
+],
+"slots": [
+	{ "name": "game/crosshair", "bone": "bone", "attachment": "game/crosshair" }
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"game/crosshair": {
+				"game/crosshair": { "width": 114, "height": 111 }
+			}
+		}
+	}
+],
+"animations": {
+	"animation": {
+		"slots": {
+			"game/crosshair": {
+				"rgba": [
+					{ "color": "ffffff00" },
+					{ "time": 0.1667, "color": "ffffffff" }
+				]
+			}
+		},
+		"bones": {
+			"rotator": {
+				"rotate": [
+					{
+						"curve": [ 0.667, 0, 1.333, 360 ]
+					},
+					{ "time": 2, "value": 360 }
+				]
+			},
+			"bone": {
+				"rotate": [
+					{
+						"value": 360,
+						"curve": [ 0.667, 360, 1.333, 0 ]
+					},
+					{ "time": 2 }
+				],
+				"translate": [
+					{
+						"x": 70.88,
+						"curve": [ 0.667, 70.88, 1.333, 0, 0.667, 0, 1.333, 0 ]
+					},
+					{ "time": 2 }
+				]
+			}
+		}
+	}
+}
+}

@@ -1,0 +1,40 @@
+{
+"skeleton": {
+	"hash": "rA7xtwsxGto",
+	"spine": "4.1.24",
+	"x": -33,
+	"y": -28.28,
+	"width": 66,
+	"height": 56.55,
+	"images": "",
+	"audio": ""
+},
+"bones": [
+	{ "name": "root" },
+	{ "name": "bone", "parent": "root", "scaleX": 0.15, "scaleY": 0.15 }
+],
+"slots": [
+	{ "name": "game/enemy-heli", "bone": "bone", "attachment": "game/enemy-heli" },
+	{ "name": "bbox", "bone": "bone", "attachment": "bbox" }
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"bbox": {
+				"bbox": {
+					"type": "boundingbox",
+					"vertexCount": 4,
+					"vertices": [ -191.16, -65.55, -191.89, 81.85, 222.46, 85.52, 223.92, -69.95 ]
+				}
+			},
+			"game/enemy-heli": {
+				"game/enemy-heli": { "rotation": -90, "width": 377, "height": 440 }
+			}
+		}
+	}
+],
+"animations": {
+	"animation": {}
+}
+}

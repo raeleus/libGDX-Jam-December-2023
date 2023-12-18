@@ -1,0 +1,40 @@
+{
+"skeleton": {
+	"hash": "FS+OVMwK9gQ",
+	"spine": "4.1.24",
+	"x": -104.49,
+	"y": -103.68,
+	"width": 208.98,
+	"height": 207.36,
+	"images": "",
+	"audio": ""
+},
+"bones": [
+	{ "name": "root" },
+	{ "name": "bone", "parent": "root", "scaleX": 0.15, "scaleY": 0.15 }
+],
+"slots": [
+	{ "name": "game/mothership", "bone": "bone", "attachment": "game/mothership" },
+	{ "name": "bbox", "bone": "bone", "attachment": "bbox" }
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"bbox": {
+				"bbox": {
+					"type": "boundingbox",
+					"vertexCount": 4,
+					"vertices": [ -230.51, -222.09, -232.54, 230.9, 230.6, 226.83, 228.57, -226.15 ]
+				}
+			},
+			"game/mothership": {
+				"game/mothership": { "scaleX": 2.6895, "scaleY": 2.6895, "width": 518, "height": 514 }
+			}
+		}
+	}
+],
+"animations": {
+	"animation": {}
+}
+}

@@ -1,0 +1,63 @@
+{
+"skeleton": {
+	"hash": "y77Z/Wa5Y9g",
+	"spine": "4.1.24",
+	"x": -18.17,
+	"y": -92.75,
+	"width": 38.25,
+	"height": 189.44,
+	"images": "",
+	"audio": ""
+},
+"bones": [
+	{ "name": "root" },
+	{ "name": "bone", "parent": "root", "scaleX": 0.15, "scaleY": 0.15 },
+	{ "name": "game/truck-ramp", "parent": "bone", "length": 212.26, "rotation": -90.82, "x": 7.16, "y": -433.22 }
+],
+"slots": [
+	{ "name": "game/truck-ramp", "bone": "game/truck-ramp", "attachment": "game/truck-ramp" },
+	{ "name": "game/truck", "bone": "bone", "attachment": "game/truck" },
+	{ "name": "bbox", "bone": "bone", "attachment": "bbox" }
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"bbox": {
+				"bbox": {
+					"type": "boundingbox",
+					"vertexCount": 4,
+					"vertices": [ -101.99, -454.44, -101.99, 627.98, 107.22, 631.02, 122.38, -460.51 ]
+				}
+			},
+			"game/truck": {
+				"game/truck": { "x": 6.37, "y": 92.11, "width": 255, "height": 1105 }
+			},
+			"game/truck-ramp": {
+				"game/truck-ramp": { "x": 103.08, "y": 1.47, "rotation": 90.82, "width": 188, "height": 164 }
+			}
+		}
+	}
+],
+"animations": {
+	"animation": {
+		"slots": {
+			"game/truck-ramp": {
+				"attachment": [
+					{}
+				]
+			}
+		}
+	},
+	"ramp": {
+		"bones": {
+			"game/truck-ramp": {
+				"scale": [
+					{ "x": 0 },
+					{ "time": 0.1667 }
+				]
+			}
+		}
+	}
+}
+}

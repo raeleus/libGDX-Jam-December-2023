@@ -1,0 +1,40 @@
+{
+"skeleton": {
+	"hash": "mBtzx8g7crU",
+	"spine": "4.1.24",
+	"x": -15.6,
+	"y": -3.38,
+	"width": 31.2,
+	"height": 6.75,
+	"images": "",
+	"audio": ""
+},
+"bones": [
+	{ "name": "root" },
+	{ "name": "bone", "parent": "root", "scaleX": 0.15, "scaleY": 0.15 }
+],
+"slots": [
+	{ "name": "game/missile", "bone": "bone", "attachment": "game/missile" },
+	{ "name": "bbox", "bone": "bone", "attachment": "bbox" }
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"bbox": {
+				"bbox": {
+					"type": "boundingbox",
+					"vertexCount": 4,
+					"vertices": [ -104.08, -17.32, -104.08, 19.45, 101.98, 18.6, 101.98, -16.46 ]
+				}
+			},
+			"game/missile": {
+				"game/missile": { "rotation": -90, "width": 45, "height": 208 }
+			}
+		}
+	}
+],
+"animations": {
+	"animation": {}
+}
+}

@@ -1,0 +1,50 @@
+{
+"skeleton": {
+	"hash": "BvBoJNrfm7A",
+	"spine": "4.1.24",
+	"x": -117.67,
+	"y": -1.27,
+	"width": 118.2,
+	"height": 1.95,
+	"images": "",
+	"audio": ""
+},
+"bones": [
+	{ "name": "root" },
+	{ "name": "bone", "parent": "root", "scaleX": 0.15, "scaleY": 0.15 },
+	{ "name": "game/bullet", "parent": "bone", "length": 796.01, "rotation": 180, "x": -1.09, "y": -0.05 }
+],
+"slots": [
+	{ "name": "game/bullet", "bone": "game/bullet", "attachment": "game/bullet" },
+	{ "name": "bbox", "bone": "bone", "attachment": "bbox" }
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"bbox": {
+				"bbox": {
+					"type": "boundingbox",
+					"vertexCount": 4,
+					"vertices": [ -416.34, -20.55, -414.63, 18.74, 21.12, 18.74, 19.41, -18.84 ]
+				}
+			},
+			"game/bullet": {
+				"game/bullet": { "x": 389.38, "y": 1.94, "rotation": 180, "width": 788, "height": 13 }
+			}
+		}
+	}
+],
+"animations": {
+	"animation": {
+		"bones": {
+			"game/bullet": {
+				"scale": [
+					{ "x": 0 },
+					{ "time": 0.3333 }
+				]
+			}
+		}
+	}
+}
+}

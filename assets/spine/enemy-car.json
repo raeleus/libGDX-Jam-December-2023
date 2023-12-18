@@ -1,0 +1,93 @@
+{
+"skeleton": {
+	"hash": "lqsb2ZwEyYo",
+	"spine": "4.1.24",
+	"x": -36.68,
+	"y": -20.21,
+	"width": 73.35,
+	"height": 41.28,
+	"images": "",
+	"audio": ""
+},
+"bones": [
+	{ "name": "root" },
+	{ "name": "bone", "parent": "root", "scaleX": 0.15, "scaleY": 0.15 },
+	{ "name": "spike-top-right", "parent": "bone", "length": 75.11, "rotation": -86.76, "x": 125.72, "y": -92.31 },
+	{ "name": "spike-bottom-right", "parent": "bone", "length": 99.05, "rotation": -89.18, "x": -124.71, "y": -92.31 },
+	{ "name": "spike-top-left", "parent": "bone", "length": 82.17, "rotation": 87.04, "x": 125.72, "y": 90.21 },
+	{ "name": "spike-bottom-left", "parent": "bone", "length": 128.78, "rotation": 91.26, "x": -140.27, "y": 97.28 },
+	{ "name": "dust", "parent": "bone", "length": 91.67, "rotation": -89.54, "x": -234.43, "y": 3.02 }
+],
+"slots": [
+	{ "name": "game/enemy-car", "bone": "bone", "attachment": "game/enemy-car" },
+	{ "name": "bbox", "bone": "bone", "attachment": "bbox" },
+	{ "name": "game/spike", "bone": "bone", "attachment": "game/spike" },
+	{ "name": "game/spike2", "bone": "bone", "attachment": "game/spike" },
+	{ "name": "game/spike3", "bone": "bone", "attachment": "game/spike" },
+	{ "name": "game/spike4", "bone": "bone", "attachment": "game/spike" }
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"bbox": {
+				"bbox": {
+					"type": "boundingbox",
+					"vertexCount": 4,
+					"vertices": [ -237.49, -111.89, -238.84, 94.74, 218.97, 93.39, 225.72, -105.13 ]
+				}
+			},
+			"game/enemy-car": {
+				"game/enemy-car": { "rotation": -90, "width": 269, "height": 489 }
+			},
+			"game/spike": {
+				"game/spike": { "x": 128.31, "y": -109.23, "rotation": -88.76, "width": 50, "height": 49 }
+			},
+			"game/spike2": {
+				"game/spike": { "x": -127.52, "y": -109.23, "rotation": -88.76, "width": 50, "height": 49 }
+			},
+			"game/spike3": {
+				"game/spike": { "x": -136.49, "y": 114.92, "rotation": 91.24, "width": 50, "height": 49 }
+			},
+			"game/spike4": {
+				"game/spike": { "x": 129.5, "y": 105.96, "rotation": 91.24, "width": 50, "height": 49 }
+			}
+		}
+	}
+],
+"animations": {
+	"normal": {
+		"slots": {
+			"game/spike": {
+				"attachment": [
+					{}
+				]
+			},
+			"game/spike2": {
+				"attachment": [
+					{}
+				]
+			},
+			"game/spike3": {
+				"attachment": [
+					{}
+				]
+			},
+			"game/spike4": {
+				"attachment": [
+					{}
+				]
+			}
+		}
+	},
+	"spike": {
+		"slots": {
+			"game/spike4": {
+				"attachment": [
+					{ "name": "game/spike" }
+				]
+			}
+		}
+	}
+}
+}

@@ -1,0 +1,96 @@
+{
+"skeleton": {
+	"hash": "HmVdSoeIavk",
+	"spine": "4.1.24",
+	"x": -31.43,
+	"y": -12.2,
+	"width": 799.96,
+	"height": 23.62,
+	"images": "",
+	"audio": ""
+},
+"bones": [
+	{ "name": "root" },
+	{ "name": "bone", "parent": "root", "scaleX": 0.15, "scaleY": 0.15 },
+	{ "name": "game/plasma", "parent": "bone", "length": 110.36, "x": 170.99, "y": 2.48 },
+	{ "name": "game/bullet", "parent": "bone", "length": 118.49, "rotation": 88.6, "x": 1684.73, "y": -8.45 },
+	{ "name": "dust", "parent": "bone", "length": 133.47, "rotation": -90, "x": -195.56, "y": 3.02 }
+],
+"slots": [
+	{ "name": "game/bullet", "bone": "game/bullet", "attachment": "game/bullet" },
+	{ "name": "game/enemy-bike", "bone": "bone", "attachment": "game/enemy-bike" },
+	{ "name": "bbox", "bone": "bone", "attachment": "bbox" },
+	{ "name": "game/plasma", "bone": "game/plasma", "attachment": "game/plasma" }
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"bbox": {
+				"bbox": {
+					"type": "boundingbox",
+					"vertexCount": 4,
+					"vertices": [ -196.28, -45.92, -196.28, 49.74, 189.77, 49.74, 193.19, -49.34 ]
+				}
+			},
+			"game/bullet": {
+				"game/bullet": {
+					"color": "9f00adff",
+					"x": 25.18,
+					"y": -792.28,
+					"scaleX": 6.7151,
+					"scaleY": 7.9693,
+					"rotation": -89.19,
+					"width": 788,
+					"height": 13
+				}
+			},
+			"game/enemy-bike": {
+				"game/enemy-bike": { "rotation": -90, "width": 123, "height": 419 }
+			},
+			"game/plasma": {
+				"game/plasma": { "x": 2.83, "y": 2.83, "width": 143, "height": 138 }
+			}
+		}
+	}
+],
+"animations": {
+	"animation": {},
+	"blast": {
+		"bones": {
+			"game/bullet": {
+				"scale": [
+					{ "x": 0 },
+					{ "time": 0.1333 },
+					{ "time": 0.2667, "x": 0 }
+				]
+			},
+			"game/plasma": {
+				"scale": [
+					{},
+					{ "time": 0.1333, "y": 0 }
+				]
+			}
+		}
+	},
+	"charge": {
+		"bones": {
+			"game/plasma": {
+				"scale": [
+					{
+						"x": 0,
+						"y": 0,
+						"curve": [ 0.333, 0, 0.667, 1, 0.333, 0, 0.667, 1 ]
+					},
+					{ "time": 1 }
+				]
+			},
+			"game/bullet": {
+				"scale": [
+					{ "x": 0 }
+				]
+			}
+		}
+	}
+}
+}

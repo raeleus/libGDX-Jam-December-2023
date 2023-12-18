@@ -1,0 +1,32 @@
+{
+"skeleton": {
+	"hash": "C4zyMNcVlGo",
+	"spine": "4.1.24",
+	"x": -14.48,
+	"y": -14.7,
+	"width": 28.95,
+	"height": 29.4,
+	"images": "",
+	"audio": ""
+},
+"bones": [
+	{ "name": "root" },
+	{ "name": "bone", "parent": "root", "scaleX": 0.15, "scaleY": 0.15 }
+],
+"slots": [
+	{ "name": "game/scorch", "bone": "bone", "attachment": "game/scorch" }
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"game/scorch": {
+				"game/scorch": { "width": 193, "height": 196 }
+			}
+		}
+	}
+],
+"animations": {
+	"animation": {}
+}
+}

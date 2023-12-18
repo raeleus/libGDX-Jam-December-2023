@@ -1,0 +1,40 @@
+{
+"skeleton": {
+	"hash": "Kyn3Yo3tSKE",
+	"spine": "4.1.24",
+	"x": -11.07,
+	"y": -9.68,
+	"width": 21.45,
+	"height": 20.7,
+	"images": "",
+	"audio": ""
+},
+"bones": [
+	{ "name": "root" },
+	{ "name": "bone", "parent": "root", "scaleX": 0.15, "scaleY": 0.15 }
+],
+"slots": [
+	{ "name": "game/plasma", "bone": "bone", "attachment": "game/plasma" },
+	{ "name": "bbox", "bone": "bone", "attachment": "bbox" }
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"bbox": {
+				"bbox": {
+					"type": "boundingbox",
+					"vertexCount": 4,
+					"vertices": [ -70.8, -62.29, -70.8, 69.39, 67.82, 70.02, 67.19, -64.18 ]
+				}
+			},
+			"game/plasma": {
+				"game/plasma": { "x": -2.28, "y": 4.47, "width": 143, "height": 138 }
+			}
+		}
+	}
+],
+"animations": {
+	"animation": {}
+}
+}
